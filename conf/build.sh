@@ -34,7 +34,7 @@ cd "${BUILD_DIR}"
 BUILD_TARGETS=("afl-fuzz" "afl-fuzz-noaffin" "afl-fuzz-print" "afl-fuzz-noaffin-print" "afl-fuzz-noaffin-coredump" "afl-fuzz-long" "afl-fuzz-noaffin-long" "afl-fuzz-short" "afl-fuzz-noaffin-short")
 BUILD_FLAGS=("" "-DNOAFFIN_BENCH=1" "-DPRINT_BENCH=1" "-DNOAFFIN_BENCH=1 -DPRINT_BENCH=1" "-DNOAFFIN_BENCH=1 -DCORE_BENCH=1 -DLONG_BENCH=1" "-DLONG_BENCH=1" "-DNOAFFIN_BENCH=1 -DLONG_BENCH=1" "-DSHORT_BENCH=1" "-DNOAFFIN_BENCH=1 -DSHORT_BENCH=1")
 
-git clone https://github.com/andronat/aflnet.git --branch mymaster --single-branch aflnet
+git clone https://github.com/arbusz/aflnet.git --branch master --single-branch aflnet
 cd aflnet
 
 IT=0
