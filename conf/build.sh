@@ -23,8 +23,8 @@ mkdir -p "./builds"
 cd "./builds"
 BUILD_DIR=$(pwd)
 
-sudo apt update
-sudo apt install -y make build-essential apt-utils openssl clang graphviz-dev \
+apt update
+apt install -y make build-essential apt-utils openssl clang graphviz-dev \
   git libgnutls28-dev llvm cmake autoconf gettext libtool libsqlite3-dev \
   gettext-base libelf-dev libc6-dbg cmake-curses-gui
 
