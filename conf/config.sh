@@ -10,9 +10,9 @@ fi
 
 echo "Configuring AFL. This requires sudo access!"
 
-echo core | sudo tee /proc/sys/kernel/core_pattern >/dev/null || true
-sudo sysctl -w kernel.core_pattern="core" || true
-echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor || true
+echo core | tee /proc/sys/kernel/core_pattern >/dev/null || true
+sysctl -w kernel.core_pattern="core" || true
+echo performance | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor || true
 
 echo "Configuring FTP benchmark"
 
