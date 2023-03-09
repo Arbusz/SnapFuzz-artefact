@@ -157,7 +157,7 @@ MAX_TRY=9
 if [ "${SHORT_RUN}" == 1 ]; then
   MAX_TRY=2
 fi
-
+MAX_TRY=1
 IT=1
 for AFL_BIN in "${AFL_BINS[@]}"; do
   for TARGET_BIN in "${TARGET_BINS[@]}"; do
