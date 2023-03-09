@@ -26,7 +26,7 @@ BUILD_DIR=$(pwd)
 apt update
 apt install -y make build-essential apt-utils openssl clang graphviz-dev \
   git libgnutls28-dev llvm cmake autoconf gettext libtool libsqlite3-dev \
-  gettext-base libelf-dev libc6-dbg cmake-curses-gui
+  gettext-base libelf-dev libc6-dbg cmake-curses-gui libcap-dev
 
 #### Build AFLNet ####
 cd "${BUILD_DIR}"
